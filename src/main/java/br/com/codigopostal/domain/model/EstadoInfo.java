@@ -1,4 +1,4 @@
-package domain.model;
+package br.com.codigopostal.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -36,5 +36,10 @@ public class EstadoInfo {
 		this.nome = nome;
 	}
 
-	
+
+	@Override
+	public String toString() {
+		return "EstadoInfo [area=" + area + ", codigoIbge=" + codigoIbge + ", nome=" + nome + "]";
+	}
+
 }

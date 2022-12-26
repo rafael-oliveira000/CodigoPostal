@@ -1,4 +1,4 @@
-package domain.model;
+package br.com.codigopostal.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -25,4 +25,10 @@ public class CidadeInfo {
 	public void setCodigoIbge(String codigoIbge) {
 		this.codigoIbge = codigoIbge;
 	}
+
+	@Override
+	public String toString() {
+		return "CidadeInfo [area=" + area + ", codigoIbge=" + codigoIbge + "]";
+	}
+	
 }

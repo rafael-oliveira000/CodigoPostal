@@ -1,4 +1,4 @@
-package domain.model;
+package br.com.codigopostal.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -56,6 +56,11 @@ public class Principal {
 	public void setEstadoInfo(EstadoInfo estadoInfo) {
 		this.estadoInfo = estadoInfo;
 	}
-
+	@Override
+	public String toString() {
+		return "Principal [bairro=" + bairro + ", cep=" + cep + ", cidade=" + cidade + ", estado=" + estado
+				+ ", cidadeInfo=" + cidadeInfo + ", estadoInfo=" + estadoInfo + "]";
+	}
+	
 	
 }
